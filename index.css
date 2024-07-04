@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #fff;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.movies-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.movie {
+    background-color: #333;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.movie:hover {
+    transform: scale(1.05);
+}
+
+.movie img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px 5px 0 0;
+}
+
+.movie-title {
+    padding: 10px;
+    font-weight: bold;
+}
+
+.movie-overview {
+    padding: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    height: 100px;
+    overflow: hidden;
+}
+
+.movie-details {
+    background-color: #333;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.movie-details h2 {
+    margin-top: 0;
+}
+
+.movie-details p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.movie-backdrop {
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    margin-top: 10px;
+}
